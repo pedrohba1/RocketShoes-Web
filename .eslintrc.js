@@ -22,6 +22,6 @@ parser: "babel-eslint",
     "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],
     "linebreak-style": 0,
     "react/state-in-constructor": 0,
-
+    'no-console': ['error', {allow: ['tron']}]
   }
 };
