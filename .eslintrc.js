@@ -1,4 +1,5 @@
 module.exports = {
+parser: "babel-eslint",
   env: {
     browser: true,
     es6: true
@@ -9,6 +10,7 @@ module.exports = {
     SharedArrayBuffer: "readonly"
   },
   parserOptions: {
+
     ecmaFeatures: {
       jsx: true
     },
@@ -18,7 +20,8 @@ module.exports = {
   plugins: ["react"],
   rules: {
     "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],
-    "linebreak-style": 0
+    "linebreak-style": 0,
+    "react/state-in-constructor": 0,
 
   }
 };
