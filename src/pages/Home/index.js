@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import {connect} from 'react-redux';
 import { MdAddShoppingCart } from 'react-icons/md';
 import { ProductList } from './styles';
 import {formatPrice} from '../../utils/format';
@@ -52,5 +52,5 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default connect()(Home);
 
