@@ -7,7 +7,10 @@
 
 ## About <a name = "about"></a>
 
-Projeto do RocketShoes parte do curso gostack.
+Projeto do RocketShoes parte do curso gostack. Imagens representativas:
+![img](https://github.com/pedrohba1/gostack-modulo07/blob/master/readme_stuff/image1.PNG)
+![img](https://github.com/pedrohba1/gostack-modulo07/blob/master/readme_stuff/image2.PNG)
+
 
 ## Getting Started <a name = "getting_started"></a>
 
