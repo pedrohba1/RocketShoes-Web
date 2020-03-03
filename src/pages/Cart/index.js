@@ -7,14 +7,14 @@ import { Container, ProductTable, Total } from './styles';
 import { formatPrice } from '../../utils/format';
 
 function Cart({
-  cart, total, removeFromCart, updateAmount,
+  cart, total, removeFromCart, updateAmountRequest,
 }) {
   function increment(product) {
-    updateAmount(product.id, product.amount + 1);
+    updateAmountRequest(product.id, product.amount + 1);
   }
 
   function decrement(product) {
-    updateAmount(product.id, product.amount - 1);
+    updateAmountRequest(product.id, product.amount - 1);
   }
 
 
