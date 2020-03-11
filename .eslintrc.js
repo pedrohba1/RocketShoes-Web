@@ -1,30 +1,38 @@
 module.exports = {
-parser: "babel-eslint",
   env: {
     browser: true,
-    es6: true
+    es6: true,
   },
-  extends: ["plugin:react/recommended", "airbnb"],
+  extends: [
+    'plugin:react/recommended',
+    'airbnb',
+    'prettier',
+    'prettier/react'
+  ],
   globals: {
-    Atomics: "readonly",
-    SharedArrayBuffer: "readonly"
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
   },
+  parser: 'babel-eslint',
   parserOptions: {
-
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
     ecmaVersion: 2018,
-    sourceType: "module"
+    sourceType: 'module',
   },
-  plugins: ["react","react-hooks" ],
+  plugins: [
+    'react',
+    'prettier'
+  ],
   rules: {
-    "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],
-    "linebreak-style": 0,
-    "react/state-in-constructor": 0,
-    'no-console': ['error', {allow: ['tron']}],
-    'no-param-reassign': 'off',
-    'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn'
-  }
+      'prettier/prettier' : 'error',
+      'react/jsx-filename-extension': [
+          'warn',
+          {extensions: ['.jsx', '.js']}
+      ],
+      'import/prefer-default-export':'off',
+      'no-param-reassign': 'off',
+      'no-console': 'off',
+  },
 };

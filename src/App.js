@@ -13,20 +13,18 @@ import Routes from './routes';
 import history from './services/history';
 import store from './store';
 
-
 function App() {
-  return (
+    return (
+        <Provider store={store}>
+            <Router history={history}>
+                <Header />
 
-    <Provider store={store}>
-      <Router history={history}>
-        <Header />
-
-        <Routes />
-        <GlobalStyle />
-        <ToastContainer autoClose={3000} />
-      </Router>
-    </Provider>
-  );
+                <Routes />
+                <GlobalStyle />
+                <ToastContainer autoClose={3000} />
+            </Router>
+        </Provider>
+    );
 }
 
 export default App;
