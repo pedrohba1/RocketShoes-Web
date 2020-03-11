@@ -17,12 +17,14 @@ parser: "babel-eslint",
     ecmaVersion: 2018,
     sourceType: "module"
   },
-  plugins: ["react"],
+  plugins: ["react","react-hooks" ],
   rules: {
     "react/jsx-filename-extension": [1, { extensions: [".js", ".jsx"] }],
     "linebreak-style": 0,
     "react/state-in-constructor": 0,
     'no-console': ['error', {allow: ['tron']}],
     'no-param-reassign': 'off',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn'
   }
 };
